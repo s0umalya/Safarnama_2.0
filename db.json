@@ -1,3 +1,54 @@
 {
-    "users":[]
+  "users": [
+    {
+      "firstName": "",
+      "lastName": "",
+      "gender": "",
+      "dateOfBirth": "",
+      "email": "",
+      "phoneNumber": "",
+      "password": "",
+      "id": 1
+    },
+    {
+      "firstName": "John",
+      "lastName": "Abraham",
+      "gender": "Male",
+      "dateOfBirth": "1989-09-23",
+      "email": "abc@def.com",
+      "phoneNumber": 1234567890,
+      "password": "abc",
+      "id": 2
+    },
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "gender": "Male",
+      "dateOfBirth": "2023-04-11",
+      "email": "schk@gmail.com",
+      "phoneNumber": 142354365,
+      "password": "asd",
+      "id": 3
+    },
+    {
+      "firstName": "Mary",
+      "lastName": "Jane",
+      "gender": "Female",
+      "dateOfBirth": "2023-01-25",
+      "email": "maryjane@yahoo.in",
+      "phoneNumber": 547376539,
+      "password": "aws",
+      "id": 4
+    },
+    {
+      "firstName": "Tony",
+      "lastName": "Kakkar",
+      "gender": "Male",
+      "dateOfBirth": "1990-06-15",
+      "email": "tkak@abc.com",
+      "phoneNumber": 987654321,
+      "password": "dsa",
+      "id": 5
+    }
+  ]
 }

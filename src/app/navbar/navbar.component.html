@@ -5,6 +5,7 @@
     mat-button
     class="example-icon favorite-icon"
     aria-label="Example icon-button with heart icon"
+    routerLink=""
   >
     Home
   </button>
@@ -16,10 +17,20 @@
     Packages
   </button>
   <button
-    mat-button
+    mat-raised-button
     class="example-icon"
     aria-label="Example icon-button with share icon"
+    routerLink="./sign-in"
   >
-    Login
+    Sign In
   </button>
+  <button mat-icon-button [matMenuTriggerFor]="beforeMenu">
+    <mat-icon>person</mat-icon>
+  </button>
+  <mat-menu #beforeMenu="matMenu" xPosition="before">
+    <button mat-menu-item>Profile</button>
+    <button mat-menu-item>Bookings</button>
+    <button mat-menu-item>Purchases</button>
+    <button mat-menu-item>Sign Out</button>
+  </mat-menu>
 </mat-toolbar>
