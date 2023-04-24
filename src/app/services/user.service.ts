@@ -12,4 +12,8 @@ url="http://localhost:3000"
   addUser(user: User) {
     return this._http.post(this.url+'/users', user);
   }
+
+  getUsers(){
+    return this._http.get<any>(this.url+'/users')
+  }
 }
