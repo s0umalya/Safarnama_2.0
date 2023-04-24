@@ -24,6 +24,9 @@
   >
     Sign In
   </button>
+  <!-- <div *ngIf="user">
+    Hi, {{user.firstName}}
+  </div> -->
   <button mat-icon-button [matMenuTriggerFor]="beforeMenu">
     <mat-icon>person</mat-icon>
   </button>
@@ -31,6 +34,6 @@
     <button mat-menu-item>Profile</button>
     <button mat-menu-item>Bookings</button>
     <button mat-menu-item>Purchases</button>
-    <button mat-menu-item routerLink="./sign-in">Sign Out</button>
+    <button mat-menu-item>Sign Out</button>
   </mat-menu>
 </mat-toolbar>

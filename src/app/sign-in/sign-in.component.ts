@@ -32,7 +32,7 @@ export class SignInComponent {
         alert("Login successful");
         this.signInForm.reset();
         this.router.navigate(['']);
-        window.sessionStorage.setItem("loggedInUser",JSON.stringify(loggedInUser));
+        this.userService.setloggedInUser("loggedInUser",loggedInUser);
       }
       else{
         alert("User Not Found")
