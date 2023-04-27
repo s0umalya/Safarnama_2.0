@@ -1,12 +1,15 @@
 import { Injectable } from '@angular/core';
 import { User } from '../models/user.model';
 import { HttpClient } from '@angular/common/http';
+import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
 
 @Injectable({
   providedIn: 'root',
 })
 export class UserService {
   url = 'http://localhost:3000';
+  loggedInUser = new BehaviorSubject({});
+  loggedInFlag = new BehaviorSubject(false)
   constructor(private _http: HttpClient) {}
 
   addUser(user: User) {
@@ -22,5 +25,9 @@ export class UserService {
   }
   setloggedInUser(key:string,user:User) {
     window.sessionStorage.setItem(key,JSON.stringify(user));
+  }
+
+  removeLoggedInUser(key:string){
+    window.sessionStorage.removeItem(key)
   }
 }

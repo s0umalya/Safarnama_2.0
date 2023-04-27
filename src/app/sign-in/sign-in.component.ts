@@ -30,6 +30,8 @@ export class SignInComponent {
       })
       if(loggedInUser){
         alert("Login successful");
+        this.userService.loggedInUser.next(loggedInUser);
+        this.userService.loggedInFlag.next(true)
         this.signInForm.reset();
         this.router.navigate(['']);
         this.userService.setloggedInUser("loggedInUser",loggedInUser);

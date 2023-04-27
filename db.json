@@ -50,5 +50,25 @@
       "password": "dsa",
       "id": 5
     }
+  ],
+  "packages":[
+    {
+      "packageName":"Matheran",
+      "packageCaption":"Example package caption",
+      "packageDescription":"Example Package Description",
+      "packageDayCount":3,
+      "packageNightCount":2,
+      "packagePrice":7500,
+      "packageCoverImage":"src\\assets\\Carousel-Matheran.png"
+    },
+    {
+      "packageName":"Maithon",
+      "packageCaption":"Example package caption",
+      "packageDescription":"Example Package Description",
+      "packageDayCount":3,
+      "packageNightCount":2,
+      "packagePrice":7500,
+      "packageCoverImage":"src\\assets\\Carousel-Maithon.png"
+    }
   ]
 }
