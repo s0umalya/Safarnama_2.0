@@ -6,4 +6,5 @@ export interface User{
       email: string,
       phoneNumber: number,
       password: string,
+      isAdminFlag:boolean
 }

@@ -22,6 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { CarouselComponent } from './carousel/carousel.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AdminComponent } from './admin/admin.component';
+import { PackagesComponent } from './packages/packages.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +32,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SignInComponent,
     SignUpComponent,
     CarouselComponent,
+    AdminComponent,
+    PackagesComponent,
   ],
   imports: [
     BrowserModule,

@@ -28,6 +28,7 @@ export class SignUpComponent {
       phoneNumber: new FormControl('', []),
       password: new FormControl('', []),
       confirmPassword: new FormControl('', []),
+      isAdminFlag: false,
     });
   }
 
@@ -40,7 +41,7 @@ export class SignUpComponent {
       user = this.signUpForm.value;
       this.userService.addUser(user).subscribe((res: any) => {
         alert('Added successfully!');
-        this.openSnackBar("Account created successfully","Close")
+        this.openSnackBar('Account created successfully', 'Close');
         this.usersList.push(res);
       });
       this.signUpForm.reset();

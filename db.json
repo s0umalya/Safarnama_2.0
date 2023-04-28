@@ -1,14 +1,15 @@
 {
   "users": [
     {
-      "firstName": "",
-      "lastName": "",
-      "gender": "",
-      "dateOfBirth": "",
-      "email": "",
-      "phoneNumber": "",
-      "password": "",
-      "id": 1
+      "firstName": "Soumalya",
+      "lastName": "Chakraborty",
+      "gender": "Male",
+      "dateOfBirth": "1998-06-28",
+      "email": "soumalya.chk@gmail.com",
+      "phoneNumber": "9804438905",
+      "password": "test",
+      "id": 1,
+      "isAdminFlag":true
     },
     {
       "firstName": "John",
@@ -18,7 +19,8 @@
       "email": "abc@def.com",
       "phoneNumber": 1234567890,
       "password": "abc",
-      "id": 2
+      "id": 3,
+      "isAdminFlag":false
     },
     {
       "firstName": "John",
@@ -28,7 +30,8 @@
       "email": "schk@gmail.com",
       "phoneNumber": 142354365,
       "password": "asd",
-      "id": 3
+      "id": 4,
+      "isAdminFlag":false
     },
     {
       "firstName": "Mary",
@@ -38,7 +41,8 @@
       "email": "maryjane@yahoo.in",
       "phoneNumber": 547376539,
       "password": "aws",
-      "id": 4
+      "id": 6,
+      "isAdminFlag":false
     },
     {
       "firstName": "Tony",
@@ -48,7 +52,8 @@
       "email": "tkak@abc.com",
       "phoneNumber": 987654321,
       "password": "dsa",
-      "id": 5
+      "id": 7,
+      "isAdminFlag":false
     }
   ],
   "packages":[

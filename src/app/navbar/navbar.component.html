@@ -13,8 +13,17 @@
     mat-button
     class="example-icon"
     aria-label="Example icon-button with share icon"
+    routerLink="./packages"
   >
     Packages
+  </button>
+  <button
+    mat-button
+    class="example-icon"
+    aria-label="Example icon-button with share icon"
+    *ngIf="loggedInFlag"
+  >
+    Admin
   </button>
   <button
     mat-raised-button
