@@ -24,6 +24,8 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AdminComponent } from './admin/admin.component';
 import { PackagesComponent } from './packages/packages.component';
+import {MatTabsModule} from '@angular/material/tabs';
+import { AddPackageComponent } from './add-package/add-package.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,6 +36,7 @@ import { PackagesComponent } from './packages/packages.component';
     CarouselComponent,
     AdminComponent,
     PackagesComponent,
+    AddPackageComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,7 +55,8 @@ import { PackagesComponent } from './packages/packages.component';
     MatNativeDateModule,
     HttpClientModule,
     MatSnackBarModule,
-    NgbModule
+    NgbModule,
+    MatTabsModule
   ],
   providers: [
     MatDatepickerModule

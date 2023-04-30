@@ -9,7 +9,7 @@
       "phoneNumber": "9804438905",
       "password": "test",
       "id": 1,
-      "isAdminFlag":true
+      "isAdminFlag": true
     },
     {
       "firstName": "John",
@@ -20,7 +20,7 @@
       "phoneNumber": 1234567890,
       "password": "abc",
       "id": 3,
-      "isAdminFlag":false
+      "isAdminFlag": false
     },
     {
       "firstName": "John",
@@ -31,7 +31,7 @@
       "phoneNumber": 142354365,
       "password": "asd",
       "id": 4,
-      "isAdminFlag":false
+      "isAdminFlag": false
     },
     {
       "firstName": "Mary",
@@ -42,7 +42,7 @@
       "phoneNumber": 547376539,
       "password": "aws",
       "id": 6,
-      "isAdminFlag":false
+      "isAdminFlag": false
     },
     {
       "firstName": "Tony",
@@ -53,27 +53,39 @@
       "phoneNumber": 987654321,
       "password": "dsa",
       "id": 7,
-      "isAdminFlag":false
+      "isAdminFlag": false
     }
   ],
-  "packages":[
+  "packages": [
     {
-      "packageName":"Matheran",
-      "packageCaption":"Example package caption",
-      "packageDescription":"Example Package Description",
-      "packageDayCount":3,
-      "packageNightCount":2,
-      "packagePrice":7500,
-      "packageCoverImage":"src\\assets\\Carousel-Matheran.png"
+      "packageName": "test",
+      "packageCaption": "",
+      "packageDescription": "",
+      "packageDayCount": "",
+      "packageNightCount": "",
+      "packagePrice": "",
+      "packageCoverImageName": "",
+      "id": 1
     },
     {
-      "packageName":"Maithon",
-      "packageCaption":"Example package caption",
-      "packageDescription":"Example Package Description",
-      "packageDayCount":3,
-      "packageNightCount":2,
-      "packagePrice":7500,
-      "packageCoverImage":"src\\assets\\Carousel-Maithon.png"
+      "packageName": "test",
+      "packageCaption": "",
+      "packageDescription": "",
+      "packageDayCount": "",
+      "packageNightCount": "",
+      "packagePrice": "",
+      "packageCoverImageName": "",
+      "id": 2
+    },
+    {
+      "packageName": "",
+      "packageCaption": "",
+      "packageDescription": "abc",
+      "packageDayCount": "",
+      "packageNightCount": "",
+      "packagePrice": "",
+      "packageCoverImageName": "",
+      "id": 3
     }
   ]
 }

@@ -1,4 +1,4 @@
-<mat-toolbar color="primary">
+<mat-toolbar color="primary" class="toolbar">
   <span>My App</span>
   <span class="example-spacer"></span>
   <button
@@ -22,6 +22,7 @@
     class="example-icon"
     aria-label="Example icon-button with share icon"
     *ngIf="loggedInFlag"
+    routerLink="./admin"
   >
     Admin
   </button>

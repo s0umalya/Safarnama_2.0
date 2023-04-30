@@ -5,5 +5,5 @@ export interface Package {
   packageDayCount: number;
   packageNightCount: number;
   packagePrice: number;
-  packageCoverImage: string;
+  packageCoverImageName: string;
 }

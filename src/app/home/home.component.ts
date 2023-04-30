@@ -5,18 +5,20 @@ import { Package } from '../models/package.model';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
-  carouselArr:Package[]=[];
+  carouselArr: Package[] = [];
 
-  constructor(private packageService:PackageService){
-this.getPackages()
+  constructor(private packageService: PackageService) {
+    this.getPackages();
   }
 
-  getPackages(){
-    this.packageService.getPackages().subscribe((res)=>{
-      console.log("Package Res",res)
-    })
+  getPackages() {
+    this.packageService.getPackages().subscribe((res) => {
+      this.carouselArr = res;
+      
+    });
+    console.log('Package Res', this.carouselArr);
   }
 }

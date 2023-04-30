@@ -1,0 +1,32 @@
+<form [formGroup]="packageForm">
+    <div class="form-row">
+      <label for="packageName">Name</label>
+      <input type="text" class="form-control" formControlName="packageName" placeholder="Name"/>
+    </div>
+    <div class="form-row">
+      <label for="packageCaption">Caption</label>
+      <input type="text" class="form-control" formControlName="packageCaption" placeholder="Caption"/>
+    </div>
+    <div class="form-row">
+      <label for="packageDescription">Description</label>
+      <textarea type="text" class="form-control" formControlName="packageDescription" placeholder="Description"></textarea>
+    </div>
+    <div class="form-row">
+      <label for="packageDayCount">Days</label>
+      <input type="number" class="form-control" formControlName="packageDayCount" placeholder="Days"/>
+    </div>
+    <div class="form-row">
+      <label for="packageNightCount">Nights</label>
+      <input type="number" class="form-control" formControlName="packageNightCount" placeholder="Nights"/>
+    </div>
+    <div class="form-row">
+      <label for="packagePrice">Price</label>
+      <input type="number" class="form-control" formControlName="packagePrice" placeholder="Price"/>
+    </div>
+    <div class="form-row">
+      <label for="packageCoverImageName">Cover Image Name</label>
+      <input type="text" class="form-control" formControlName="packageCoverImageName" />
+    </div>
+    <button type="button" class="btn btn-primary" (click)="addPackage()">Submit</button>
+  </form>
+
