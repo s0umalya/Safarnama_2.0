@@ -28,6 +28,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { AddPackageComponent } from './add-package/add-package.component';
 import { PackageListComponent } from './package-list/package-list.component';
 import { UserListComponent } from './user-list/user-list.component';
+import {MatTableModule} from '@angular/material/table';
 @NgModule({
   declarations: [
     AppComponent,
@@ -60,7 +61,8 @@ import { UserListComponent } from './user-list/user-list.component';
     HttpClientModule,
     MatSnackBarModule,
     NgbModule,
-    MatTabsModule
+    MatTabsModule,
+    MatTableModule
   ],
   providers: [
     MatDatepickerModule

@@ -20,6 +20,11 @@ export class UserService {
     return this._http.get<any>(this.url + '/users');
   }
 
+  deleteUser(user:any){
+    console.log("GETTING INSIDE SERVICE")
+    return this._http.delete(`${this.url}/users/${user.id}`)
+  }
+
   getloggedInUser(key:string) {
     return window.sessionStorage.getItem(key);
   }

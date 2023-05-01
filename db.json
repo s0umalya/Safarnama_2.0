@@ -43,136 +43,30 @@
       "password": "aws",
       "id": 6,
       "isAdminFlag": false
-    },
-    {
-      "firstName": "Tony",
-      "lastName": "Kakkar",
-      "gender": "Male",
-      "dateOfBirth": "1990-06-15",
-      "email": "tkak@abc.com",
-      "phoneNumber": 987654321,
-      "password": "dsa",
-      "id": 7,
-      "isAdminFlag": false
     }
   ],
   "packages": [
     {
       "packageName": "Matheran",
+      "packageType": "Regular",
       "packageCaption": "Mesmerizing Matheran",
-      "packageDescription": "Matheran example description",
-      "packageDayCount": 2,
-      "packageNightCount": 3,
+      "packageDescription": "Example Description of Matheran",
+      "packageDayCount": 3,
+      "packageNightCount": 2,
       "packagePrice": 7500,
       "packageCoverImageName": "Carousel-Matheran.png",
       "id": 1
     },
     {
-      "packageName": "",
-      "packageCaption": "",
-      "packageDescription": "",
-      "packageDayCount": "",
-      "packageNightCount": "",
-      "packagePrice": "",
-      "packageCoverImageName": "Carousel-Maithon.png",
+      "packageName": "Durga Puja",
+      "packageType": "Special",
+      "packageCaption": "Example caption for Durga Puja",
+      "packageDescription": "Example Description for Durga Puja special package.\nEnjoy privileged VIP entry to the famous pandals.",
+      "packageDayCount": 5,
+      "packageNightCount": 4,
+      "packagePrice": 12000,
+      "packageCoverImageName": "Durga_Puja3.jpg",
       "id": 2
-    },
-    {
-      "packageName": "",
-      "packageCaption": "",
-      "packageDescription": "",
-      "packageDayCount": "",
-      "packageNightCount": "",
-      "packagePrice": "",
-      "packageCoverImageName": "C:\\fakepath\\background.png",
-      "id": 3
-    },
-    {
-      "packageName": "",
-      "packageCaption": "",
-      "packageDescription": "",
-      "packageDayCount": "",
-      "packageNightCount": "",
-      "packagePrice": "",
-      "packageCoverImageName": "C:\\fakepath\\Carousel-Maithon.png",
-      "id": 4
-    },
-    {
-      "packageName": "",
-      "packageCaption": "",
-      "packageDescription": "",
-      "packageDayCount": "",
-      "packageNightCount": "",
-      "packagePrice": "",
-      "id": 5
-    },
-    {
-      "packageName": "",
-      "packageCaption": "",
-      "packageDescription": "",
-      "packageDayCount": "",
-      "packageNightCount": "",
-      "packagePrice": "",
-      "id": 6
-    },
-    {
-      "packageName": "",
-      "packageCaption": "",
-      "packageDescription": "",
-      "packageDayCount": "",
-      "packageNightCount": "",
-      "packagePrice": "",
-      "id": 7
-    },
-    {
-      "packageName": "",
-      "packageCaption": "",
-      "packageDescription": "",
-      "packageDayCount": "",
-      "packageNightCount": "",
-      "packagePrice": "",
-      "packageCoverImageName": "C:\\fakepath\\Carousel-Maithon.png",
-      "id": 8
-    },
-    {
-      "packageName": "",
-      "packageCaption": "",
-      "packageDescription": "",
-      "packageDayCount": "",
-      "packageNightCount": "",
-      "packagePrice": "",
-      "packageCoverImageName": "C:",
-      "id": 9
-    },
-    {
-      "packageName": "",
-      "packageCaption": "",
-      "packageDescription": "",
-      "packageDayCount": "",
-      "packageNightCount": "",
-      "packagePrice": "",
-      "packageCoverImageName": "coming-soon.png",
-      "id": 10
-    },
-    {
-      "packageName": "",
-      "packageCaption": "",
-      "packageDescription": "",
-      "packageDayCount": "",
-      "packageNightCount": "",
-      "packagePrice": "",
-      "packageCoverImageName": "Kolkata.jpg",
-      "id": 11
-    },
-    {
-      "packageName": "",
-      "packageCaption": "",
-      "packageDescription": "",
-      "packageDayCount": "",
-      "packageNightCount": "",
-      "packagePrice": "",
-      "packageCoverImageName": "",
-      "id": 12
     }
   ]
 }
