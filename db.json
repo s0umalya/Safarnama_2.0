@@ -55,6 +55,7 @@
       "packageNightCount": 2,
       "packagePrice": 7500,
       "packageCoverImageName": "Carousel-Matheran.png",
+      "packageCardImageName": "Matheran.jpg",
       "id": 1
     },
     {
@@ -66,7 +67,92 @@
       "packageNightCount": 4,
       "packagePrice": 12000,
       "packageCoverImageName": "Durga_Puja3.jpg",
+      "packageCardImageName": "Matheran.jpg",
       "id": 2
+    },
+    {
+      "packageName": "Maithon",
+      "packageType": "Regular",
+      "packageCaption": "Example Caption for Maithon",
+      "packageDescription": "Example Description for Maithon",
+      "packageDayCount": 2,
+      "packageNightCount": 1,
+      "packagePrice": 3500,
+      "packageCoverImageName": "Carousel-Maithon.png",
+      "packageCardImageName": "Maithon.jpg",
+      "id": 3
+    },
+    {
+      "packageName": "Maithon",
+      "packageType": "Regular",
+      "packageCaption": "Example Caption for Maithon",
+      "packageDescription": "Example Description for Maithon",
+      "packageDayCount": 2,
+      "packageNightCount": 1,
+      "packagePrice": 3500,
+      "packageCoverImageName": "Carousel-Maithon.png",
+      "packageCardImageName": "Matheran.jpg",
+      "id": 3
+    },
+    {
+      "packageName": "Maithon",
+      "packageType": "Regular",
+      "packageCaption": "Example Caption for Maithon",
+      "packageDescription": "Example Description for Maithon",
+      "packageDayCount": 2,
+      "packageNightCount": 1,
+      "packagePrice": 3500,
+      "packageCoverImageName": "Carousel-Maithon.png",
+      "packageCardImageName": "Matheran.jpg",
+      "id": 3
+    },
+    {
+      "packageName": "Maithon",
+      "packageType": "Regular",
+      "packageCaption": "Example Caption for Maithon",
+      "packageDescription": "Example Description for Maithon",
+      "packageDayCount": 2,
+      "packageNightCount": 1,
+      "packagePrice": 3500,
+      "packageCoverImageName": "Carousel-Maithon.png",
+      "packageCardImageName": "Matheran.jpg",
+      "id": 3
+    },
+    {
+      "packageName": "Maithon",
+      "packageType": "Regular",
+      "packageCaption": "Example Caption for Maithon",
+      "packageDescription": "Example Description for Maithon",
+      "packageDayCount": 2,
+      "packageNightCount": 1,
+      "packagePrice": 3500,
+      "packageCoverImageName": "Carousel-Maithon.png",
+      "packageCardImageName": "Matheran.jpg",
+      "id": 3
+    },
+    {
+      "packageName": "Kolkata",
+      "packageType": "Regular",
+      "packageCaption": "dsfasfd",
+      "packageDescription": "sdgsd",
+      "packageDayCount": 2,
+      "packageNightCount": 1,
+      "packagePrice": 4000,
+      "packageCoverImageName": "Kolkata.jpg",
+      "packageCardImageName": "Kolkata.jpg",
+      "id": 5
+    },
+    {
+      "packageName": "",
+      "packageType": "",
+      "packageCaption": "",
+      "packageDescription": "",
+      "packageDayCount": "",
+      "packageNightCount": "",
+      "packagePrice": "",
+      "packageCoverImageName": "",
+      "packageCardImageName": "",
+      "id": 6
     }
   ]
 }
