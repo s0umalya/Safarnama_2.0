@@ -6,5 +6,6 @@ export interface Package {
   packageDayCount: number;
   packageNightCount: number;
   packagePrice: number;
-  packageCoverImageName: string;
+  packageCoverImageName: string; //To be displayed in home page carousel
+  packageCardImageName: string; //To be displayed in packages component cards
 }

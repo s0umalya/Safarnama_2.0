@@ -74,13 +74,23 @@
           />
         </div>
       </div>
-      <div class="form-row">
-        <label for="packageCoverImageName">Upload Package Cover Image</label>
-        <input
-          type="file"
-          class="form-control"
-          formControlName="packageCoverImageName"
-        />
+      <div class="form-row-inline">
+        <div class="uploadCoverImg">
+          <label for="packageCoverImageName">Upload Cover Image</label>
+          <input
+            type="file"
+            class="form-control"
+            formControlName="packageCoverImageName"
+          />
+        </div>
+        <div class="uploadCardImg">
+          <label for="packageCardImageName">Upload Card Image</label>
+          <input
+            type="file"
+            class="form-control"
+            formControlName="packageCardImageName"
+          />
+        </div>
       </div>
       <div class="action-btn-row">
         <button type="button" class="btn cancel-btn" (click)="cancel()">

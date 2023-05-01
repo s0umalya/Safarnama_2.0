@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { PackageService } from '../services/package.service';
 import { Package } from '../models/package.model';
 import { Router } from '@angular/router';
@@ -18,7 +18,7 @@ export class AddPackageComponent {
     private router: Router
   ) {
     this.packageForm = this.formBuilder.group({
-      packageName: new FormControl('', []),
+      packageName: new FormControl('', [Validators.required]),
       packageType: new FormControl('', []),
       packageCaption: new FormControl('', []),
       packageDescription: new FormControl('', []),
@@ -26,6 +26,7 @@ export class AddPackageComponent {
       packageNightCount: new FormControl('', []),
       packagePrice: new FormControl('', []),
       packageCoverImageName: new FormControl('', []),
+      packageCardImageName: new FormControl('', []),
     });
   }
 
@@ -40,6 +41,10 @@ export class AddPackageComponent {
     addedPackage.packageCoverImageName =
       addedPackage.packageCoverImageName.split('\\')[
         addedPackage.packageCoverImageName.split('\\').length - 1
+      ];
+      addedPackage.packageCardImageName =
+      addedPackage.packageCardImageName.split('\\')[
+        addedPackage.packageCardImageName.split('\\').length - 1
       ];
     console.log('addedPackageAfter', addedPackage);
     this.packageService.addPackage(addedPackage).subscribe((res: any) => {

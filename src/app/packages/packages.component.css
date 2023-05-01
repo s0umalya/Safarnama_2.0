@@ -1,3 +1,5 @@
-img{
-    width: fit-content;
+mat-card {
+  width: 280px;
+  height: 250px;
+  margin: 2rem;
 }
