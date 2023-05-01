@@ -1,0 +1,87 @@
+.package-form-container-card {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
+.package-form-container-card-title {
+  text-align: center;
+}
+
+.form-row-inline {
+  display: flex;
+  justify-content: center;
+}
+
+.packageName{
+    flex: 1;
+    margin-right: 1rem;
+}
+.packageType{
+    flex: 1;
+    margin-left: 1rem;
+}
+
+.packageDays{
+    flex: 1;
+    margin-right: 1rem;
+}
+
+.packageNights{
+    flex: 1;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.packagePrice{
+    flex: 2;
+    margin-left: 1rem;
+}
+
+.uploadCoverImg{
+    flex:1;
+    margin-right: 1rem;
+}
+
+.uploadCardImg{
+    flex:1;
+    margin-left: 1rem;
+}
+
+mat-card {
+  background-color: #673ab7;
+}
+
+mat-card-title {
+  margin: 2vh 0;
+  color: #f6eeff;
+}
+
+mat-card-content {
+  background-color: #f6eeff;
+}
+
+label {
+  margin: 2vh 0 1vh 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #673ab7;
+}
+
+.add-package-btn {
+  background-color: #673ab7;
+  color: #f6eeff;
+  margin: 2vh;
+}
+.cancel-btn {
+  background-color: #464646;
+  color: #f6eeff;
+  margin: 2vh;
+}
+
+.action-btn-row {
+  display: flex;
+  justify-content: center;
+}

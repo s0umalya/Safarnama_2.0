@@ -1,0 +1,158 @@
+{
+  "users": [
+    {
+      "firstName": "Soumalya",
+      "lastName": "Chakraborty",
+      "gender": "Male",
+      "dateOfBirth": "1998-06-28",
+      "email": "soumalya.chk@gmail.com",
+      "phoneNumber": "9804438905",
+      "password": "test",
+      "id": 1,
+      "isAdminFlag": true
+    },
+    {
+      "firstName": "John",
+      "lastName": "Abraham",
+      "gender": "Male",
+      "dateOfBirth": "1989-09-23",
+      "email": "abc@def.com",
+      "phoneNumber": 1234567890,
+      "password": "abc",
+      "id": 3,
+      "isAdminFlag": false
+    },
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "gender": "Male",
+      "dateOfBirth": "2023-04-11",
+      "email": "schk@gmail.com",
+      "phoneNumber": 142354365,
+      "password": "asd",
+      "id": 4,
+      "isAdminFlag": false
+    },
+    {
+      "firstName": "Mary",
+      "lastName": "Jane",
+      "gender": "Female",
+      "dateOfBirth": "2023-01-25",
+      "email": "maryjane@yahoo.in",
+      "phoneNumber": 547376539,
+      "password": "aws",
+      "id": 6,
+      "isAdminFlag": false
+    }
+  ],
+  "packages": [
+    {
+      "packageName": "Matheran",
+      "packageType": "Regular",
+      "packageCaption": "Mesmerizing Matheran",
+      "packageDescription": "Example Description of Matheran",
+      "packageDayCount": 3,
+      "packageNightCount": 2,
+      "packagePrice": 7500,
+      "packageCoverImageName": "Carousel-Matheran.png",
+      "packageCardImageName": "Matheran.jpg",
+      "id": 1
+    },
+    {
+      "packageName": "Durga Puja",
+      "packageType": "Special",
+      "packageCaption": "Example caption for Durga Puja",
+      "packageDescription": "Example Description for Durga Puja special package.\nEnjoy privileged VIP entry to the famous pandals.",
+      "packageDayCount": 5,
+      "packageNightCount": 4,
+      "packagePrice": 12000,
+      "packageCoverImageName": "Durga_Puja3.jpg",
+      "packageCardImageName": "Matheran.jpg",
+      "id": 2
+    },
+    {
+      "packageName": "Maithon",
+      "packageType": "Regular",
+      "packageCaption": "Example Caption for Maithon",
+      "packageDescription": "Example Description for Maithon",
+      "packageDayCount": 2,
+      "packageNightCount": 1,
+      "packagePrice": 3500,
+      "packageCoverImageName": "Carousel-Maithon.png",
+      "packageCardImageName": "Maithon.jpg",
+      "id": 3
+    },
+    {
+      "packageName": "Maithon",
+      "packageType": "Regular",
+      "packageCaption": "Example Caption for Maithon",
+      "packageDescription": "Example Description for Maithon",
+      "packageDayCount": 2,
+      "packageNightCount": 1,
+      "packagePrice": 3500,
+      "packageCoverImageName": "Carousel-Maithon.png",
+      "packageCardImageName": "Matheran.jpg",
+      "id": 3
+    },
+    {
+      "packageName": "Maithon",
+      "packageType": "Regular",
+      "packageCaption": "Example Caption for Maithon",
+      "packageDescription": "Example Description for Maithon",
+      "packageDayCount": 2,
+      "packageNightCount": 1,
+      "packagePrice": 3500,
+      "packageCoverImageName": "Carousel-Maithon.png",
+      "packageCardImageName": "Matheran.jpg",
+      "id": 3
+    },
+    {
+      "packageName": "Maithon",
+      "packageType": "Regular",
+      "packageCaption": "Example Caption for Maithon",
+      "packageDescription": "Example Description for Maithon",
+      "packageDayCount": 2,
+      "packageNightCount": 1,
+      "packagePrice": 3500,
+      "packageCoverImageName": "Carousel-Maithon.png",
+      "packageCardImageName": "Matheran.jpg",
+      "id": 3
+    },
+    {
+      "packageName": "Maithon",
+      "packageType": "Regular",
+      "packageCaption": "Example Caption for Maithon",
+      "packageDescription": "Example Description for Maithon",
+      "packageDayCount": 2,
+      "packageNightCount": 1,
+      "packagePrice": 3500,
+      "packageCoverImageName": "Carousel-Maithon.png",
+      "packageCardImageName": "Matheran.jpg",
+      "id": 3
+    },
+    {
+      "packageName": "Kolkata",
+      "packageType": "Regular",
+      "packageCaption": "dsfasfd",
+      "packageDescription": "sdgsd",
+      "packageDayCount": 2,
+      "packageNightCount": 1,
+      "packagePrice": 4000,
+      "packageCoverImageName": "Kolkata.jpg",
+      "packageCardImageName": "Kolkata.jpg",
+      "id": 5
+    },
+    {
+      "packageName": "",
+      "packageType": "",
+      "packageCaption": "",
+      "packageDescription": "",
+      "packageDayCount": "",
+      "packageNightCount": "",
+      "packagePrice": "",
+      "packageCoverImageName": "",
+      "packageCardImageName": "",
+      "id": 6
+    }
+  ]
+}

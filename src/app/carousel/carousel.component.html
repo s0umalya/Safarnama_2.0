@@ -1,0 +1,25 @@
+<div class="carousel-container">
+  <ngb-carousel>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="../../assets/Carousel-Default.png" alt="Safarnama" />
+      </div>
+      <div class="carousel-caption">
+        <button mat-raised-button color="primary">Explore</button>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide *ngFor="let item of carouselArrComp">
+      <div class="picsum-img-wrapper">
+        <img
+          src="{{ '../../assets/' + item.packageCoverImageName }}"
+          alt="Random slide"
+          (click)="viewPackageDetails(item.packageName)"
+        />
+      </div>
+      <div class="carousel-caption">
+        <h3>{{ item.packageCaption }}</h3>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>

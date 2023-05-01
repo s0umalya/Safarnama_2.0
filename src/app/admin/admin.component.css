@@ -1,0 +1,27 @@
+.admin-control-cards-container {
+  display: flex;
+  justify-content: center;
+}
+
+.admin-control-cards {
+  height: 20vh;
+  width: 15vw;
+  margin: 3rem;
+  border-radius: 1rem;
+  background-color: #cbffff;
+    background-image: linear-gradient(19deg, #cbffff 0%, #673ab7 100%);
+}
+
+mat-icon {
+  font-size: 10vh;
+  height: 10vh;
+  width: -webkit-fill-available;
+  text-align: center;
+  cursor: pointer;
+}
+
+mat-card-title {
+  text-align: center;
+  margin: 1rem;
+  cursor: pointer;
+}

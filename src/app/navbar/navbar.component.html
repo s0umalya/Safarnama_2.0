@@ -1,0 +1,47 @@
+<mat-toolbar color="primary" class="toolbar">
+  <span>My App</span>
+  <span class="example-spacer"></span>
+  <button
+    mat-button
+    class="example-icon favorite-icon"
+    aria-label="Example icon-button with heart icon"
+    routerLink=""
+  >
+    Home
+  </button>
+  <button
+    mat-button
+    class="example-icon"
+    aria-label="Example icon-button with share icon"
+    routerLink="./packages"
+  >
+    Packages
+  </button>
+  <button
+    mat-button
+    class="example-icon"
+    aria-label="Example icon-button with share icon"
+    *ngIf="loggedInFlag"
+    routerLink="./admin"
+  >
+    Admin
+  </button>
+  <button
+    mat-raised-button
+    class="example-icon"
+    aria-label="Example icon-button with share icon"
+    routerLink="./sign-in"
+    *ngIf="!loggedInFlag"
+  >
+    Sign In
+  </button>
+  <button mat-icon-button [matMenuTriggerFor]="beforeMenu" *ngIf="loggedInFlag">
+    <mat-icon>person</mat-icon>
+  </button>
+  <mat-menu #beforeMenu="matMenu" xPosition="before" >
+    <button mat-menu-item>Profile</button>
+    <button mat-menu-item>Bookings</button>
+    <button mat-menu-item>Purchases</button>
+    <button mat-menu-item (click)="signOut()">Sign Out</button>
+  </mat-menu>
+</mat-toolbar>

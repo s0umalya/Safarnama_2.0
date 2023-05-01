@@ -1,0 +1,37 @@
+<div class="container">
+  <mat-card class="card">
+    <mat-card-header>
+      <mat-card-title>Sign In</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form [formGroup]="signInForm">
+        <div class="form-group col-md-6">
+          <label for="email">Email id</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Email id"
+            formControlName="email"
+          />
+        </div>
+        <div class="form-group col-md-6">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Password"
+            formControlName="password"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary" (click)="login()">
+          Sign in
+        </button>
+      </form>
+
+      <p>Don't have an account?</p>
+      <a routerLink="../sign-up">Create account</a>
+    </mat-card-content>
+  </mat-card>
+</div>
