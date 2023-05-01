@@ -16,9 +16,20 @@ export class HomeComponent {
 
   getPackages() {
     this.packageService.getPackages().subscribe((res) => {
-      this.carouselArr = res;
-      
+      this.carouselArr = this.shuffleArray(res).splice(0,5);      
     });
     console.log('Package Res', this.carouselArr);
   }
+
+  shuffleArray(array:any) {
+    var m = array.length, t, i;
+ 
+    while (m) {    
+     i = Math.floor(Math.random() * m--);
+     t = array[m];
+     array[m] = array[i];
+     array[i] = t;
+    } 
+   return array;
+ }
 }

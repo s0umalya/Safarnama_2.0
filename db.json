@@ -58,34 +58,121 @@
   ],
   "packages": [
     {
-      "packageName": "test",
-      "packageCaption": "",
-      "packageDescription": "",
-      "packageDayCount": "",
-      "packageNightCount": "",
-      "packagePrice": "",
-      "packageCoverImageName": "",
+      "packageName": "Matheran",
+      "packageCaption": "Mesmerizing Matheran",
+      "packageDescription": "Matheran example description",
+      "packageDayCount": 2,
+      "packageNightCount": 3,
+      "packagePrice": 7500,
+      "packageCoverImageName": "Carousel-Matheran.png",
       "id": 1
     },
     {
-      "packageName": "test",
+      "packageName": "",
       "packageCaption": "",
       "packageDescription": "",
       "packageDayCount": "",
       "packageNightCount": "",
       "packagePrice": "",
-      "packageCoverImageName": "",
+      "packageCoverImageName": "Carousel-Maithon.png",
       "id": 2
     },
     {
       "packageName": "",
       "packageCaption": "",
-      "packageDescription": "abc",
+      "packageDescription": "",
+      "packageDayCount": "",
+      "packageNightCount": "",
+      "packagePrice": "",
+      "packageCoverImageName": "C:\\fakepath\\background.png",
+      "id": 3
+    },
+    {
+      "packageName": "",
+      "packageCaption": "",
+      "packageDescription": "",
+      "packageDayCount": "",
+      "packageNightCount": "",
+      "packagePrice": "",
+      "packageCoverImageName": "C:\\fakepath\\Carousel-Maithon.png",
+      "id": 4
+    },
+    {
+      "packageName": "",
+      "packageCaption": "",
+      "packageDescription": "",
+      "packageDayCount": "",
+      "packageNightCount": "",
+      "packagePrice": "",
+      "id": 5
+    },
+    {
+      "packageName": "",
+      "packageCaption": "",
+      "packageDescription": "",
+      "packageDayCount": "",
+      "packageNightCount": "",
+      "packagePrice": "",
+      "id": 6
+    },
+    {
+      "packageName": "",
+      "packageCaption": "",
+      "packageDescription": "",
+      "packageDayCount": "",
+      "packageNightCount": "",
+      "packagePrice": "",
+      "id": 7
+    },
+    {
+      "packageName": "",
+      "packageCaption": "",
+      "packageDescription": "",
+      "packageDayCount": "",
+      "packageNightCount": "",
+      "packagePrice": "",
+      "packageCoverImageName": "C:\\fakepath\\Carousel-Maithon.png",
+      "id": 8
+    },
+    {
+      "packageName": "",
+      "packageCaption": "",
+      "packageDescription": "",
+      "packageDayCount": "",
+      "packageNightCount": "",
+      "packagePrice": "",
+      "packageCoverImageName": "C:",
+      "id": 9
+    },
+    {
+      "packageName": "",
+      "packageCaption": "",
+      "packageDescription": "",
+      "packageDayCount": "",
+      "packageNightCount": "",
+      "packagePrice": "",
+      "packageCoverImageName": "coming-soon.png",
+      "id": 10
+    },
+    {
+      "packageName": "",
+      "packageCaption": "",
+      "packageDescription": "",
+      "packageDayCount": "",
+      "packageNightCount": "",
+      "packagePrice": "",
+      "packageCoverImageName": "Kolkata.jpg",
+      "id": 11
+    },
+    {
+      "packageName": "",
+      "packageCaption": "",
+      "packageDescription": "",
       "packageDayCount": "",
       "packageNightCount": "",
       "packagePrice": "",
       "packageCoverImageName": "",
-      "id": 3
+      "id": 12
     }
   ]
 }

@@ -1,5 +1,6 @@
 export interface Package {
   packageName: string;
+  packageType: string;
   packageCaption: string;
   packageDescription: string;
   packageDayCount: number;

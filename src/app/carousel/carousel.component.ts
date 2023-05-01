@@ -14,9 +14,8 @@ export class CarouselComponent {
 
   }
 
-  viePackageDetails(packageName:string){
+  viewPackageDetails(packageName:string){
+    //Just testing route. Need to update according to selected package
     this.router.navigate(['./packages'])
   }
-
-  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
 }

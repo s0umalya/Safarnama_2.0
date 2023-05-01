@@ -19,6 +19,7 @@ export class AddPackageComponent {
   ) {
     this.packageForm = this.formBuilder.group({
       packageName: new FormControl('', []),
+      packageType: new FormControl('', []),
       packageCaption: new FormControl('', []),
       packageDescription: new FormControl('', []),
       packageDayCount: new FormControl('', []),
@@ -28,12 +29,21 @@ export class AddPackageComponent {
     });
   }
 
+  cancel() {
+    this.router.navigate(['admin']);
+  }
+
   addPackage() {
     let addedPackage: Package;
     addedPackage = this.packageForm.value;
-    console.log('addedPackage', addedPackage);
+    console.log('addedPackageBefore', addedPackage);
+    addedPackage.packageCoverImageName =
+      addedPackage.packageCoverImageName.split('\\')[
+        addedPackage.packageCoverImageName.split('\\').length - 1
+      ];
+    console.log('addedPackageAfter', addedPackage);
     this.packageService.addPackage(addedPackage).subscribe((res: any) => {
-      alert("Package added successfully")
+      alert('Package added successfully');
     });
     this.packageForm.reset();
     this.router.navigate(['admin']);
