@@ -12,4 +12,7 @@ export class AdminComponent {
   openPackageForm() {
     this.router.navigate(['./admin/add-package']);
   }
+  openUserList(){
+    this.router.navigate(['./admin/user-list'])
+  }
 }

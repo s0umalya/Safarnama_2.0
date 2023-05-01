@@ -26,6 +26,8 @@ import { AdminComponent } from './admin/admin.component';
 import { PackagesComponent } from './packages/packages.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import { AddPackageComponent } from './add-package/add-package.component';
+import { PackageListComponent } from './package-list/package-list.component';
+import { UserListComponent } from './user-list/user-list.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,6 +39,8 @@ import { AddPackageComponent } from './add-package/add-package.component';
     AdminComponent,
     PackagesComponent,
     AddPackageComponent,
+    PackageListComponent,
+    UserListComponent,
   ],
   imports: [
     BrowserModule,

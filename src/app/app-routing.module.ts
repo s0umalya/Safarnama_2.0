@@ -6,6 +6,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { PackagesComponent } from './packages/packages.component';
 import { AdminComponent } from './admin/admin.component';
 import { AddPackageComponent } from './add-package/add-package.component';
+import { UserListComponent } from './user-list/user-list.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'packages', component: PackagesComponent },
   { path: 'admin', component: AdminComponent },
   { path: 'admin/add-package', component: AddPackageComponent },
+  { path: 'admin/user-list', component: UserListComponent },
 ];
 
 @NgModule({
