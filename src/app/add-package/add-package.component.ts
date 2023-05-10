@@ -13,10 +13,13 @@ export class AddPackageComponent {
   packageForm: FormGroup;
   //packageList: Package[] = [];
   constructor(
-    private formBuilder: FormBuilder,
+    private formBuilder: FormBuilder,    
     private packageService: PackageService,
     private router: Router
   ) {
+
+
+
     this.packageForm = this.formBuilder.group({
       packageName: new FormControl('', [Validators.required]),
       packageType: new FormControl('', []),

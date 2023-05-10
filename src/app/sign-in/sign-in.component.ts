@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { UserService } from '../services/user.service';
 import { Router } from '@angular/router';
 
@@ -10,13 +10,14 @@ import { Router } from '@angular/router';
 })
 export class SignInComponent {
   signInForm: FormGroup;
+  hide:boolean=true;
   constructor(
     private formBuilder: FormBuilder,
     private userService: UserService,
     private router: Router
   ) {
     this.signInForm = this.formBuilder.group({
-      email: new FormControl('', []),
+      email: new FormControl('', [Validators.required]),
       password: new FormControl('', []),
     });
   }

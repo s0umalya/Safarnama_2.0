@@ -1,7 +1,91 @@
+.login-page-bg-img{
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/background.png');
+    background-size: cover;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 50%;
+}
+
 .card{
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 50%;
     transform: translate(-50%,-50%);
+    width: 500px;
+    background-color: #F5F5F5;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+
+.form-group{
+    margin: 0.5rem;
+}
+
+.btn{
+    margin:2rem 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+mat-form-field{
+    width: 25vw;
+}
+
+mat-card-header{
+    display: flex;
+    justify-content: center;
+}
+
+mat-card-title{
+    color: #6639b5;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+label{
+    margin-bottom: 0.5rem;
+    color: #F5F5F5;
+    font-weight: 500;
+}
+
+.button-div{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-basic:hover{
+    background-color: #6639b5;
+    color: #F5F5F5;
+    transition: all .4s ease;
+}
+
+.btn-basic{
+    border: 3px solid #6639b5;
+    background-color: #F5F5F5;
+    color: #6639b5;
+}
+
+.nav-to-signup-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+#signup-nav-link{
+    text-decoration: none;
+    font-weight: 600;
+    color: #6639b5;
+}
+

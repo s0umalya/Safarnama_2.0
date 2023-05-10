@@ -107,3 +107,109 @@
     </form>
   </mat-card-content>
 </mat-card>
+
+<mat-stepper linear #stepper>
+  <mat-step [stepControl]="packageForm">
+    <form [formGroup]="packageForm">
+      <ng-template matStepLabel>Basic details</ng-template>
+        <div class="form-row-inline">
+          <div class="packageName">
+            <label for="packageName">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              formControlName="packageName"
+              placeholder="Name"
+            />
+          </div>
+          <div class="packageType">
+            <label for="packageType">Package Type</label>
+            <select
+              class="form-select"
+              formControlName="packageType"
+              aria-label="Default select example"
+            >
+              <option selected value="">Select Package Type</option>
+              <option value="Regular">Regular</option>
+              <option value="Special">Special</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="packageCaption">Caption</label>
+          <input
+            type="text"
+            class="form-control"
+            formControlName="packageCaption"
+            placeholder="Caption"
+          />
+        </div>
+        <div class="form-row">
+          <label for="packageDescription">Description</label>
+          <textarea
+            type="text"
+            class="form-control"
+            formControlName="packageDescription"
+            placeholder="Description"
+          ></textarea>
+        </div>
+        <div class="form-row-inline">
+          <div class="packageDays">
+            <label for="packageDayCount">Days</label>
+            <input
+              type="number"
+              class="form-control"
+              formControlName="packageDayCount"
+              placeholder="Days"
+            />
+          </div>
+          <div class="packageNights">
+            <label for="packageNightCount">Nights</label>
+            <input
+              type="number"
+              class="form-control"
+              formControlName="packageNightCount"
+              placeholder="Nights"
+            />
+          </div>
+          <div class="packagePrice col-md-8">
+            <label for="packagePrice">Price</label>
+            <input
+              type="number"
+              class="form-control"
+              formControlName="packagePrice"
+              placeholder="Price"
+            />
+          </div>
+        </div>
+      <div>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="packageForm" label="Fill out your address">
+    <form [formGroup]="packageForm">
+      <mat-form-field appearance="fill">
+        <mat-label>Address</mat-label>
+        <input
+          matInput
+          formControlName="secondCtrl"
+          placeholder="Ex. 1 Main St, New York, NY"
+          required
+        />
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
+    <p>You are now done.</p>
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <!-- <button mat-button (click)="stepper.reset()">Reset</button> -->
+    </div>
+  </mat-step>
+</mat-stepper>

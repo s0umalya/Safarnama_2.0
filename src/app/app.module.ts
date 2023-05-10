@@ -29,6 +29,9 @@ import { AddPackageComponent } from './add-package/add-package.component';
 import { PackageListComponent } from './package-list/package-list.component';
 import { UserListComponent } from './user-list/user-list.component';
 import {MatTableModule} from '@angular/material/table';
+import {MatStepperModule} from '@angular/material/stepper';
+import {MatInputModule} from '@angular/material/input';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,7 +65,9 @@ import {MatTableModule} from '@angular/material/table';
     MatSnackBarModule,
     NgbModule,
     MatTabsModule,
-    MatTableModule
+    MatTableModule,
+    MatStepperModule,
+    MatInputModule
   ],
   providers: [
     MatDatepickerModule
