@@ -43,6 +43,39 @@
       "password": "aws",
       "id": 6,
       "isAdminFlag": false
+    },
+    {
+      "firstName": "Rohit",
+      "lastName": "Mehra",
+      "gender": "Male",
+      "dateOfBirth": "1989-09-04T18:30:00.000Z",
+      "email": "rohitmehra@gmail.com",
+      "phoneNumber": "",
+      "password": "test",
+      "isAdminFlag": false,
+      "id": 7
+    },
+    {
+      "firstName": "Purab",
+      "lastName": "Kohli",
+      "gender": "Male",
+      "dateOfBirth": "1989-07-13T18:30:00.000Z",
+      "email": "purabtest@test.com",
+      "phoneNumber": 4568574598,
+      "password": "test",
+      "isAdminFlag": false,
+      "id": 8
+    },
+    {
+      "firstName": "Ruchi",
+      "lastName": "Sinha",
+      "gender": "Female",
+      "dateOfBirth": "1998-07-21T18:30:00.000Z",
+      "email": "ruchitest@test.com",
+      "phoneNumber": "",
+      "password": "test",
+      "isAdminFlag": false,
+      "id": 9
     }
   ],
   "packages": [

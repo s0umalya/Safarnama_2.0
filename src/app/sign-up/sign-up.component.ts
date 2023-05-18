@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { User } from '../models/user.model';
 import { UserService } from '../services/user.service';
 import { Router } from '@angular/router';
@@ -13,6 +13,8 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 export class SignUpComponent {
   signUpForm: FormGroup;
   usersList: User[] = [];
+  hidePassword:boolean=true;
+  hideConfPassword:boolean=true;
   constructor(
     private formBuilder: FormBuilder,
     private userService: UserService,
@@ -20,14 +22,14 @@ export class SignUpComponent {
     private _snackBar: MatSnackBar
   ) {
     this.signUpForm = this.formBuilder.group({
-      firstName: new FormControl('', []),
-      lastName: new FormControl('', []),
-      gender: new FormControl('', []),
-      dateOfBirth: new FormControl('', []),
-      email: new FormControl('', []),
+      firstName: new FormControl('', [Validators.required]),
+      lastName: new FormControl('', [Validators.required]),
+      gender: new FormControl('', [Validators.required]),
+      dateOfBirth: new FormControl('', [Validators.required]),
+      email: new FormControl('', [Validators.required]),
       phoneNumber: new FormControl('', []),
-      password: new FormControl('', []),
-      confirmPassword: new FormControl('', []),
+      password: new FormControl('', [Validators.required]),
+      confirmPassword: new FormControl('', [Validators.required]),
       isAdminFlag: false,
     });
   }

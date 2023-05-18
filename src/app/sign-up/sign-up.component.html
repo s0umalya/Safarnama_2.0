@@ -7,31 +7,51 @@
       <form [formGroup]="signUpForm">
         <div class="form-row">
           <div class="form-group col-md-6">
-            <label for="inputEmail4">First name</label>
+            <!-- <label for="inputEmail4">First name</label>
             <input
               type="text"
               class="form-control"
               id="firstName"
               placeholder="First Name"
               formControlName="firstName"
-            />
+            /> -->
+            <mat-form-field appearance="outline">
+              <mat-label>First Name</mat-label>
+              <input
+                matInput
+                placeholder="First Name"
+                formControlName="firstName"
+              />
+            </mat-form-field>
           </div>
           <div class="form-group col-md-6">
-            <label for="inputPassword4">Last Name</label>
+            <!-- <label for="inputPassword4">Last Name</label>
             <input
               type="text"
               class="form-control"
               id="lastName"
               placeholder="Last Name"
               formControlName="lastName"
-            />
+            /> -->
+            <mat-form-field appearance="outline">
+              <mat-label>Last Name</mat-label>
+              <input
+                matInput
+                placeholder="Last Name"
+                formControlName="lastName"
+              />
+            </mat-form-field>
           </div>
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
             <div class="col-auto my-1">
-              <label class="mr-sm-2" for="gender">Gender</label><br />
-              <mat-radio-group aria-label="Select an option" formControlName="gender">
+              <mat-label>Gender : </mat-label>
+              <!-- <label class="mr-sm-2" for="gender">Gender</label><br /> -->
+              <mat-radio-group
+                aria-label="Select an option"
+                formControlName="gender"
+              >
                 <mat-radio-button value="Male">Male</mat-radio-button>
                 <mat-radio-button value="Female">Female</mat-radio-button>
                 <mat-radio-button value="Other">Other</mat-radio-button>
@@ -39,65 +59,126 @@
             </div>
           </div>
           <div class="form-group col-md-6">
-            <label for="dateOfBirth">Date Of Birth</label>
+            <!-- <label for="dateOfBirth">Date Of Birth</label>
             <input
               type="date"
               formControlName="dateOfBirth"
               class="form-control"
-            />
+            /> -->
+            <mat-form-field appearance="outline">
+              <mat-label>Date of Birth</mat-label>
+              <input
+                matInput
+                [matDatepicker]="picker"
+                formControlName="dateOfBirth"
+              />
+              <mat-hint>MM/DD/YYYY</mat-hint>
+              <mat-datepicker-toggle
+                matIconSuffix
+                [for]="picker"
+              ></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
           </div>
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
-            <label for="email">Email id</label>
+            <!-- <label for="email">Email id</label>
             <input
               type="email"
               class="form-control"
               id="email"
               placeholder="Email id"
               formControlName="email"
-            />
+            /> -->
+            <mat-form-field appearance="outline">
+              <mat-label>Email id</mat-label>
+              <input
+                type="email"
+                matInput
+                placeholder="Email id"
+                formControlName="email"
+              />
+            </mat-form-field>
           </div>
           <div class="form-group col-md-6">
-            <label for="phoneNumber">Phone number</label>
+            <!-- <label for="phoneNumber">Phone number</label>
             <input
               type="number"
               class="form-control"
               id="phoneNumber"
               placeholder="Phone number"
               formControlName="phoneNumber"
-            />
+            /> -->
+            <mat-form-field appearance="outline">
+              <mat-label>Phone number</mat-label>
+              <input
+                type="number"
+                matInput
+                placeholder="Phone number"
+                formControlName="phoneNumber"
+              />
+            </mat-form-field>
           </div>
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
-            <label for="password">Password</label>
+            <!-- <label for="password">Password</label>
             <input
               type="password"
               class="form-control"
               id="password"
               placeholder="Password"
               formControlName="password"
-            />
+            /> -->
+            <mat-form-field appearance="outline">
+              <mat-label>Password</mat-label>
+              <input
+                matInput
+                placeholder="Password"
+                formControlName="password"
+                [type]="hidePassword ? 'password' : 'text'"
+              />
+              <mat-icon matSuffix (click)="hidePassword = !hidePassword">{{
+                hidePassword ? "visibility_off" : "visibility"
+              }}</mat-icon>
+            </mat-form-field>
           </div>
           <div class="form-group col-md-6">
-            <label for="confirmPassword">Confirm password</label>
+            <!-- <label for="confirmPassword">Confirm password</label>
             <input
               type="password"
               class="form-control"
               id="confirmPassword"
               placeholder="Confirm password"
               formControlName="confirmPassword"
-            />
+            /> -->
+            <mat-form-field appearance="outline">
+              <mat-label>Confirm Password</mat-label>
+              <input
+                matInput
+                placeholder="Confirm Password"
+                formControlName="confirmPassword"
+                [type]="hideConfPassword ? 'password' : 'text'"
+              />
+              <mat-icon
+                matSuffix
+                (click)="hideConfPassword = !hideConfPassword"
+                >{{
+                  hideConfPassword ? "visibility_off" : "visibility"
+                }}</mat-icon
+              >
+            </mat-form-field>
           </div>
         </div>
-        <button type="button" class="btn btn-primary" (click)="addUser()">
+        <button mat-raised-button class="btn-basic" (click)="addUser()">
           Sign Up
         </button>
       </form>
-
-      <p>Already have an account?</p>
-      <a routerLink="../sign-in">Sign In</a>
+      <div class="nav-to-signin-text">
+        <p>Already have an account?</p>
+        <a id="signin-nav-link" routerLink="../sign-in">Sign In</a>
+      </div>
     </mat-card-content>
   </mat-card>
 </div>
