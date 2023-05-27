@@ -1,4 +1,4 @@
-<mat-card class="package-form-container-card">
+<!-- <mat-card class="package-form-container-card">
   <mat-card-title class="package-form-container-card-title">
     Package Registration Form
   </mat-card-title>
@@ -106,12 +106,15 @@
       </div>
     </form>
   </mat-card-content>
-</mat-card>
+</mat-card> -->
 
-<mat-stepper linear #stepper>
-  <mat-step [stepControl]="packageForm">
-    <form [formGroup]="packageForm">
-      <ng-template matStepLabel>Basic details</ng-template>
+<mat-card>
+  <mat-card-title> Add Package </mat-card-title>
+  <mat-stepper #stepper>
+    <!-- <mat-stepper linear #stepper> -->
+    <mat-step [stepControl]="packageForm">
+      <form [formGroup]="packageForm">
+        <ng-template matStepLabel>Basic details</ng-template>
         <div class="form-row-inline">
           <div class="packageName">
             <label for="packageName">Name</label>
@@ -182,34 +185,67 @@
             />
           </div>
         </div>
-      <div>
-        <button mat-button matStepperNext>Next</button>
-      </div>
-    </form>
-  </mat-step>
-  <mat-step [stepControl]="packageForm" label="Fill out your address">
-    <form [formGroup]="packageForm">
-      <mat-form-field appearance="fill">
-        <mat-label>Address</mat-label>
-        <input
-          matInput
-          formControlName="secondCtrl"
-          placeholder="Ex. 1 Main St, New York, NY"
-          required
-        />
-      </mat-form-field>
-      <div>
-        <button mat-button matStepperPrevious>Back</button>
-        <button mat-button matStepperNext>Next</button>
-      </div>
-    </form>
-  </mat-step>
-  <mat-step>
-    <ng-template matStepLabel>Done</ng-template>
-    <p>You are now done.</p>
-    <div>
-      <button mat-button matStepperPrevious>Back</button>
-      <!-- <button mat-button (click)="stepper.reset()">Reset</button> -->
-    </div>
-  </mat-step>
-</mat-stepper>
+        <div class="stepper-action-btns-div">
+          <button mat-button matStepperNext (click)="loadItineraryForm()" class="stepper-action-btn">
+            Next
+          </button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="packageForm" label="Itinerary">
+      <form [formGroup]="packageForm">
+        <div *ngFor="let day of dayArr">
+          <label>
+            {{ day }}
+          </label>
+          <textarea
+            type="text"
+            class="form-control"
+            formControlName="{{ day }}"
+            placeholder="Add itinerary for {{ day }}"
+          ></textarea>
+        </div>
+        <div class="stepper-action-btns-div">
+          <button mat-button matStepperPrevious class="stepper-action-btn-back">Back</button>
+          <button mat-button matStepperNext class="stepper-action-btn">Next</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="packageForm" label="Upload Images">
+      <form [formGroup]="packageForm">
+        <div class="image-upload-form-div">
+          <div>
+            <label>Upload Cover Image</label>
+            <input
+              type="file"
+              class="form-control"
+              formControlName="packageCoverImageName"
+            />
+          </div>
+          <div>
+            <label>Upload Card Image</label>
+            <input
+              type="file"
+              class="form-control"
+              formControlName="packageCardImageName"
+            />
+          </div>
+          <div>
+            <label>Upload Gallery Images</label>
+            <input
+              type="file"
+              class="form-control"
+              multiple
+              formControlName="packageGalleryImages"
+              (change)="onFileChange($event)"
+            />
+          </div>
+        </div>
+        <div class="stepper-action-btns-div">
+          <button mat-button matStepperPrevious class="stepper-action-btn-back">Back</button>
+          <button mat-button matStepperNext (click)="addPackage()" class="stepper-action-btn">Next</button>
+        </div>
+      </form>
+    </mat-step>
+  </mat-stepper>
+</mat-card>

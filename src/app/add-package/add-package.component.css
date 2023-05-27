@@ -15,51 +15,57 @@
   justify-content: center;
 }
 
-.packageName{
-    flex: 1;
-    margin-right: 1rem;
+.packageName {
+  flex: 1;
+  margin-right: 1rem;
 }
-.packageType{
-    flex: 1;
-    margin-left: 1rem;
-}
-
-.packageDays{
-    flex: 1;
-    margin-right: 1rem;
+.packageType {
+  flex: 1;
+  margin-left: 1rem;
 }
 
-.packageNights{
-    flex: 1;
-    margin-left: 1rem;
-    margin-right: 1rem;
+.packageDays {
+  flex: 1;
+  margin-right: 1rem;
 }
 
-.packagePrice{
-    flex: 2;
-    margin-left: 1rem;
+.packageNights {
+  flex: 1;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
-.uploadCoverImg{
-    flex:1;
-    margin-right: 1rem;
+.packagePrice {
+  flex: 2;
+  margin-left: 1rem;
 }
 
-.uploadCardImg{
-    flex:1;
-    margin-left: 1rem;
+.uploadCoverImg {
+  flex: 1;
+  margin-right: 1rem;
+}
+
+.uploadCardImg {
+  flex: 1;
+  margin-left: 1rem;
 }
 
 mat-card {
   background-color: #673ab7;
+  margin: 5rem;
 }
 
 mat-card-title {
   margin: 2vh 0;
   color: #f6eeff;
+  text-align: center;
 }
 
 mat-card-content {
+  background-color: #f6eeff;
+}
+
+mat-stepper {
   background-color: #f6eeff;
 }
 
@@ -84,4 +90,36 @@ label {
 .action-btn-row {
   display: flex;
   justify-content: center;
+}
+
+.stepper-action-btns-div {
+  display: flex;
+  justify-content: center;
+}
+
+.stepper-action-btn {
+  margin: 1rem;
+  background-color: #6639b5;
+  color: #f5f5f5;
+}
+
+.stepper-action-btn-back{
+  margin: 1rem;
+  background-color:#808080;
+  color: #f5f5f5;
+}
+.stepper-action-btn-back:hover{
+  background-color:#cfcfcf;
+  color: #808080;
+  transition: all 0.2s ease;
+}
+.stepper-action-btn:hover {
+  background-color: #f6eeff;
+  color: #6639b5;
+  transition: all 0.2s ease;
+}
+
+.image-upload-form-div{
+  display: flex;
+  justify-content: space-evenly;
 }

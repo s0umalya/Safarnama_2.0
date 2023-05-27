@@ -186,6 +186,26 @@
       "packageCoverImageName": "",
       "packageCardImageName": "",
       "id": 6
+    },
+    {
+      "packageName": "Agartala",
+      "packageType": "Regular",
+      "packageCaption": "Amazing Agartala",
+      "packageDescription": "This is a test description",
+      "packageDayCount": 2,
+      "packageNightCount": 1,
+      "packagePrice": 3500,
+      "packageCoverImageName": "IMG_8608.jpg",
+      "packageCardImageName": "IMG_8495.jpg",
+      "packageGalleryImages": [
+        "IMG_8484.jpg",
+        "IMG_8485.jpg",
+        "IMG_8489.jpg",
+        "IMG_8491.jpg"
+      ],
+      "Day 1": "Test day 1 ",
+      "Day 2": "Test day 2",
+      "id": 7
     }
   ]
 }
